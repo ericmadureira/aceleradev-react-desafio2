@@ -36,8 +36,34 @@ body {
 	width: 126px;
 }
 
+.stories {
+	margin-top: 56px;
+	padding: 16px 0;
+	width: 100%;
+}
+
+.stories div {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.stories div a {
+	text-decoration: none;
+}
+
+.stories div a img {
+	border: 5px solid #fff;
+	border-radius: 50%;
+	height: 78px;
+	margin: 0 8px;
+	width: 78px;
+}
+
 @media screen and (min-width: 728px) {
 	.header__container {
+		width: 728px;
+	}
+	.stories div {
 		width: 728px;
 	}
 }
