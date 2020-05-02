@@ -8,6 +8,90 @@
 
 body {
 	background-color: #FAFAFA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.feed {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.feed__post {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 10px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.feed__post__likes {
+	align-items: center;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: start;
+	padding: 8px;
+}
+
+.feed__post__likes img {
+	border-radius: 50%;
+	height: 30px;
+	margin-right: 8px;
+	width: 30px;
+}
+
+.feed__post__likes span {
+	font-size: 12px;
+}
+
+.feed__post__picture {
+	margin: 0;
+	width: 100%;
+}
+
+.feed__post__picture img {
+	width: 100%;
+}
+
+.feed__post__profile {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	width: 100%;
+}
+
+.feed__post__profile__id {
+	align-items: center;
+	display: flex;
+}
+
+.feed__post__profile__id img {
+	border-radius: 50%;
+	height: 40px;
+	margin-right: 8px;
+	width: 40px;
+}
+
+.feed__post__profile__id span {
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.feed__post__social {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 0;
+}
+
+.feed__post__social i {
+	font-size: 24px;
+	margin: 1px 14px;
 }
 
 .header {
@@ -38,7 +122,7 @@ body {
 
 .stories {
 	margin-top: 56px;
-	padding: 16px 0;
+	padding: 16px 0 28px 0;
 	width: 100%;
 }
 
@@ -60,10 +144,7 @@ body {
 }
 
 @media screen and (min-width: 728px) {
-	.header__container {
-		width: 728px;
-	}
-	.stories div {
+	.feed, .header__container, .stories div {
 		width: 728px;
 	}
 }
